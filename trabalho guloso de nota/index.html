@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows XP Academic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="desktop" class="desktop">
+      <div id="desktop-icons" class="desktop-icons" aria-label="Área de trabalho">
+        <button class="desktop-icon app-shortcut" data-program="boletim" type="button" style="left: 16px; top: 18px;">
+          <img src="ICON1_1.ico" alt="Boletim.exe" />
+          <span>Boletim.exe</span>
+        </button>
+        <button class="desktop-icon app-shortcut" data-program="computador" type="button" style="left: 16px; top: 108px;">
+          <img src="Computer Folder.ico" alt="Meu Computador" />
+          <span>Meu Computador</span>
+        </button>
+        <button class="desktop-icon app-shortcut" data-program="lixeira" type="button" style="left: 16px; top: 198px;">
+          <img src="Closed folder.ico" alt="Lixeira" />
+          <span>Lixeira</span>
+        </button>
+        <button class="desktop-icon app-shortcut" data-program="ajuda" type="button" style="left: 16px; top: 288px;">
+          <img src="All Programs.ico" alt="Ajuda e Suporte" />
+          <span>Ajuda e Suporte</span>
+        </button>
+        <button class="desktop-icon app-shortcut" data-program="sobre" type="button" style="left: 16px; top: 378px;">
+          <img src="Windows Explorer.ico" alt="Sobre o sistema" />
+          <span>Sobre o sistema</span>
+        </button>
+      </div>
+
+      <div id="desktop-context-menu" class="context-menu hidden" role="menu" aria-label="Menu de contexto">
+        <button class="context-menu-item" type="button" data-action="open">Abrir</button>
+        <button class="context-menu-item" type="button" data-action="rename">Renomear</button>
+        <button class="context-menu-item" type="button" data-action="delete">Excluir</button>
+        <button class="context-menu-item" type="button" data-action="organize">Organizar ícones</button>
+        <button class="context-menu-item" type="button" data-action="refresh">Atualizar desktop</button>
+        <button class="context-menu-item" type="button" data-action="create-folder">Criar pasta fictícia</button>
+        <button class="context-menu-item" type="button" data-action="wallpaper">Personalizar papel de parede</button>
+      </div>
+
+      <div id="window-layer" class="window-layer" aria-live="polite"></div>
+    </div>
+
+    <div id="taskbar" class="taskbar" aria-label="Barra de tarefas">
+      <button id="start-button" class="start-button" type="button" aria-expanded="false" aria-controls="start-menu">
+        <span class="start-button-icon" aria-hidden="true"></span>
+        Iniciar
+      </button>
+
+      <div id="taskbar-buttons" class="taskbar-buttons" aria-label="Programas abertos"></div>
+
+      <div id="taskbar-clock" class="taskbar-clock" aria-live="polite">00:00</div>
+    </div>
+
+    <div id="start-menu" class="start-menu hidden" role="menu" aria-label="Menu iniciar">
+      <div class="start-menu-header">
+        <span>Windows XP</span>
+      </div>
+      <div class="start-menu-body">
+        <button class="start-menu-item" type="button" data-program="boletim">
+          <img src="ICON1_1.ico" alt="" />
+          Boletim.exe
+        </button>
+        <button class="start-menu-item" type="button" data-program="computador">
+          <img src="Computer Folder.ico" alt="" />
+          Meu Computador
+        </button>
+        <button class="start-menu-item" type="button" data-program="ajuda">
+          <img src="All Programs.ico" alt="" />
+          Ajuda e Suporte
+        </button>
+        <button class="start-menu-item" type="button" data-program="sobre">
+          <img src="Windows Explorer.ico" alt="" />
+          Sobre o sistema
+        </button>
+      </div>
+      <div class="start-menu-footer">
+        <button id="shutdown-button" class="shutdown-button" type="button">Desligar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
